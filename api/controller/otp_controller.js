@@ -3,8 +3,8 @@ const path = require('path');
 const Nexmo = require('nexmo');
 
 const nexmo = new Nexmo({
-  apiKey: '9d2338d7',
-  apiSecret: 'M82K5qBpxR0cAsyP'
+  apiKey: 'api_key',
+  apiSecret: 'api_secret'
 });
 
 module.exports.userDetails = function (req,res) {
