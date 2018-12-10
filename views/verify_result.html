@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h3> <a href="/">Home</a> </h3>
+        <form action="/verify" method="post"><input name="pin" required="" type="number" placeholder="1234" />
+          <input name="requestId" class="form-control" type="hidden" value="<%= requestId %>">
+          <input type="submit" class="btn btn-primary" value="Verify PIN" />
+          <br>
+          <small>Do not share the OTP with anyone</small>
+        </form>
+
+      </div>
+
+    </div>
+  </body>
+</html>
